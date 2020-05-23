@@ -21,13 +21,11 @@ var node = (function () {
             success:function (res) {
                var res=JSON.parse(res)
                 if(res.code==200){
-                    console.log(123)
                     $("#box").text('hello: '+res.data.name)
                     $("#p").hide()
                 }
             },
             error:function (res) {
-                console.log()
                 $("#p").show();
             }
         })
