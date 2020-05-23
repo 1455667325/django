@@ -18,7 +18,9 @@ from django.contrib import admin
 from django.conf.urls import include, url
 from person import urls as person_urls
 from search import urls as search_urls
+from datenode import urls as datenode_urls
 urlpatterns = [
     url(r'^person/', include(person_urls)),
     url(r'^search/', include(search_urls)),
+    url(r'^datenode/', include(datenode_urls)),
 ]
